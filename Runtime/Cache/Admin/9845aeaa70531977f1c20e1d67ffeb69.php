@@ -85,58 +85,36 @@
             
 
             
-	<!-- 标题栏 -->
-	<div class="main-title">
-		<h2>模型列表</h2>
-
+	<div class="main-title cf">
+		<h2>
+			导航排序 [ <a href="<?php echo U('index',array('pid'=>I('pid')));?>">返回列表</a> ]
+		</h2>
 	</div>
-    <div class="tools">
-        <a class="btn" href="<?php echo U('Model/add');?>">新 增</a>
-        <button class="btn ajax-post" target-form="ids" url="<?php echo U('Model/setStatus',array('status'=>1));?>">启 用</button>
-        <button class="btn ajax-post" target-form="ids" url="<?php echo U('Model/setStatus',array('status'=>0));?>">禁 用</button>
-        <a class="btn" href="<?php echo U('Model/generate');?>">生 成</a>
-    </div>
-
-	<!-- 数据列表 -->
-	<div class="data-table">
-        <div class="data-table table-striped">
-<table class="">
-    <thead>
-        <tr>
-		<th class="row-selected row-selected"><input class="check-all" type="checkbox"/></th>
-		<th class="">编号</th>
-		<th class="">标识</th>
-		<th class="">名称</th>
-		<th class="">创建时间</th>
-		<th class="">状态</th>
-		<th class="">操作</th>
-		</tr>
-    </thead>
-    <tbody>
-	<?php if(!empty($_list)): if(is_array($_list)): $i = 0; $__LIST__ = $_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-            <td><input class="ids" type="checkbox" name="ids[]" value="<?php echo ($vo["id"]); ?>" /></td>
-			<td><?php echo ($vo["id"]); ?> </td>
-			<td><?php echo ($vo["name"]); ?></td>
-			<td><a data-id="<?php echo ($vo["id"]); ?>" href="<?php echo U('model/edit?id='.$vo['id']);?>"><?php echo ($vo["title"]); ?></a></td>
-			<td><span><?php echo (time_format($vo["create_time"])); ?></span></td>
-			<td><?php echo ($vo["status_text"]); ?></td>
-			<td>
-				<a href="<?php echo U('think/lists?model='.$vo['name']);?>">数据</a>
-				<a href="<?php echo U('model/setstatus?ids='.$vo['id'].'&status='.abs(1-$vo['status']));?>" class="ajax-get"><?php echo (show_status_op($vo["status"])); ?></a>
-				<a href="<?php echo U('model/edit?id='.$vo['id']);?>">编辑</a>
-				<a href="<?php echo U('model/del?ids='.$vo['id']);?>" class="confirm ajax-get">删除</a>
-            </td>
-		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-		<?php else: ?>
-		<td colspan="7" class="text-center"> aOh! 暂时还没有内容! </td><?php endif; ?>
-	</tbody>
-    </table>
-
-        </div>
-    </div>
-    <div class="page">
-        <?php echo ($_page); ?>
-    </div>
+	<div class="sort">
+		<form action="<?php echo U('sort');?>" method="post">
+<!-- 			<div class="sort_top">
+				查找：<input type="text"><button class="btn search" type="button">查找</button>
+			</div> -->
+			<div class="sort_center">
+				<div class="sort_option">
+					<select value="" size="8">
+						<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option class="ids" title="<?php echo ($vo["title"]); ?>" value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+					</select>
+				</div>
+				<div class="sort_btn">
+					<button class="top btn" type="button">第 一</button>
+					<button class="up btn" type="button">上 移</button>
+					<button class="down btn" type="button">下 移</button>
+					<button class="bottom btn" type="button">最 后</button>
+				</div>
+			</div>
+			<div class="sort_bottom">
+				<input type="hidden" name="ids">
+				<button class="sort_confirm btn submit-btn" type="button">确 定</button>
+				<button class="sort_cancel btn btn-return" type="button" url="<?php echo U('index',array('pid'=>I('pid')));?>">返 回</button>
+			</div>
+		</form>
+	</div>
 
         </div>
         <div class="cont-ft">
@@ -151,7 +129,7 @@
     (function(){
         var ThinkPHP = window.Think = {
             "ROOT"   : "", //当前网站地址
-            "APP"    : "/index.php", //当前项目地址
+            "APP"    : "/index.php?s=", //当前项目地址
             "PUBLIC" : "/Public", //项目公共目录地址
             "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
             "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],
@@ -231,23 +209,80 @@
         }();
     </script>
     
-    <script src="/Public/static/thinkbox/jquery.thinkbox.js"></script>
-    <script type="text/javascript">
-    $(function(){
-    	$("#search").click(function(){
-    		var url = $(this).attr('url');
-    		var status = $('select[name=status]').val();
-    		var search = $('input[name=search]').val();
-    		if(status != ''){
-    			url += '/status/' + status;
-    		}
-    		if(search != ''){
-    			url += '/search/' + search;
-    		}
-    		window.location.href = url;
-    	});
-})
-</script>
+	<script type="text/javascript">
+		//导航高亮
+		highlight_subnav('<?php echo U('Channel/index');?>');
+		$(function(){
+			sort();
+			$(".top").click(function(){
+				rest();
+				$("option:selected").prependTo("select");
+				sort();
+			})
+			$(".bottom").click(function(){
+				rest();
+				$("option:selected").appendTo("select");
+				sort();
+			})
+			$(".up").click(function(){
+				rest();
+				$("option:selected").after($("option:selected").prev());
+				sort();
+			})
+			$(".down").click(function(){
+				rest();
+				$("option:selected").before($("option:selected").next());
+				sort();
+			})
+			$(".search").click(function(){
+				var v = $("input").val();
+				$("option:contains("+v+")").attr('selected','selected');
+			})
+			function sort(){
+				$('option').text(function(){return ($(this).index()+1)+'.'+$(this).text()});
+			}
+
+			//重置所有option文字。
+			function rest(){
+				$('option').text(function(){
+					return $(this).text().split('.')[1]
+				});
+			}
+
+			//获取排序并提交
+			$('.sort_confirm').click(function(){
+				var arr = new Array();
+				$('.ids').each(function(){
+					arr.push($(this).val());
+				});
+				$('input[name=ids]').val(arr.join(','));
+				$.post(
+					$('form').attr('action'),
+					{
+					'ids' :  arr.join(',')
+					},
+					function(data){
+						if (data.status) {
+	                        updateAlert(data.info + ' 页面即将自动跳转~','alert-success');
+	                    }else{
+	                        updateAlert(data.info,'alert-success');
+	                    }
+	                    setTimeout(function(){
+	                        if (data.status) {
+	                        	$('.sort_cancel').click();
+	                        }
+	                    },1500);
+					},
+					'json'
+				);
+			});
+
+			//点击取消按钮
+			$('.sort_cancel').click(function(){
+				window.location.href = $(this).attr('url');
+			});
+		})
+	</script>
 
 </body>
 </html>

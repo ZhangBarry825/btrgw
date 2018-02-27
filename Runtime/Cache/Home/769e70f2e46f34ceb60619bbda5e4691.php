@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/Public/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="/Public/static/bootstrap/css/docs.css" rel="stylesheet">
-<link href="/Public/static/bootstrap/css/onethink.css" rel="stylesheet">
+<!--<link href="/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">-->
+<!--<link href="/Public/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
+<!--<link href="/Public/static/bootstrap/css/docs.css" rel="stylesheet">-->
+<!--<link href="/Public/static/bootstrap/css/onethink.css" rel="stylesheet">-->
 
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -23,74 +23,156 @@
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
 
+	
+    <link href="/Public/Home/my/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Public/Home/my/css/swiper.min.css">
+    <script src="/Public/Home/my/js/swiper.min.js"></script>
+    <script src="/Public/Home/my/js/index.js"></script>
+
 </head>
 <body>
-	<!-- 头部 -->
-	<!-- 导航条
-================================================== -->
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="brand" href="<?php echo U('index/index');?>">OneThink</a>
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    <?php $__NAV__ = M('Channel')->field(true)->where("status=1")->order("sort")->select(); if(is_array($__NAV__)): $i = 0; $__LIST__ = $__NAV__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i; if(($nav["pid"]) == "0"): ?><li>
-                            <a href="<?php echo (get_nav_url($nav["url"])); ?>" target="<?php if(($nav["target"]) == "1"): ?>_blank<?php else: ?>_self<?php endif; ?>"><?php echo ($nav["title"]); ?></a>
-                        </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
-                </ul>
-            </div>
-            <div class="nav-collapse collapse pull-right">
-                <?php if(is_login()): ?><ul class="nav" style="margin-right:0">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo U('User/profile');?>">修改密码</a></li>
-                                <li><a href="<?php echo U('User/logout');?>">退出</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                <?php else: ?>
-                    <ul class="nav" style="margin-right:0">
-                        <li>
-                            <a href="<?php echo U('User/login');?>">登录</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo U('User/register');?>" style="padding-left:0;padding-right:0">注册</a>
-                        </li>
-                    </ul><?php endif; ?>
-            </div>
-        </div>
-    </div>
-</div>
 
-	<!-- /头部 -->
-	
 	<!-- 主体 -->
 	
-    <header class="jumbotron subhead" id="overview">
-        <div class="container">
-            <h2>源自相同起点，演绎不同精彩！</h2>
-            <p class="lead"></p>
+    <div class="top-background" style="background-image: url('/Public/Home/my/images/back01.jpg')">
+        <div class="top-header">
+            <div class="top-center">
+                <div class="top-center-left">
+                    <img src="/Public/Home/my/images/logo02.png">
+                    <a>河南拜特尔软件科技有限公司</a>
+                </div>
+                <div class="top-center-right">
+                    <ul>
+                        <?php $__NAV__ = M('Channel')->field(true)->where("status=1")->order("sort")->select(); if(is_array($__NAV__)): $i = 0; $__LIST__ = $__NAV__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i; if(($nav["pid"]) == "0"): ?><li>
+                                    <a href="<?php echo (get_nav_url($nav["url"])); ?>"
+                                       target="<?php if(($nav["target"]) == "1"): ?>_blank<?php else: ?>_self<?php endif; ?>"><?php echo ($nav["title"]); ?></a>
+                                </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </header>
-
-<div id="main-container" class="container">
-    <div class="row">
-        
-<!-- 左侧 nav
-================================================== -->
-    <div class="span3 bs-docs-sidebar">
-        <ul class="nav nav-list bs-docs-sidenav">
-            <?php echo W('Category/lists', array(1, true));?>
-        </ul>
     </div>
 
-        
+
+    <div class="gywm">
+        <div class="gywm-title">关于我们</div>
+        <div class="gywm-middle">
+            <div class="gywm-middle-left">
+                <img src="/Public/Home/my/images/pic01.jpg">
+            </div>
+            <div class="gywm-middle-right">
+                <div class="gywm-middle-top">
+                    <span>河南拜特尔软件科技有限公司</span> 隶属于香港明码集团，独创技术为理念的新型企业，集团总部设在香港，并于深圳、厦门、上海、苏州、
+                    昆山、天津、唐山等区域设立下属多家企业，产品主要聚焦于标识、科技电子、互联网、软件等相关产业，与美国、德国、英国、意大利
+                    等多家巨头企业合作，共同开发或自主研发行业产品，多个产品先后获得发明专利、应用新型专利证书，且应用模式开创多个全球第一！
+                </div>
+                <div class="gywm-middle-bottom">
+                    <span>不求最好，只愿更强！</span><br>
+                    <a>——Better</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="jtjs">
+        <div class="jtjs-left" style="background-image: url('/Public/Home/my/images/pic02.jpg')">
+        </div>
+        <div class="jtjs-right">
+            <div class="jtjs-right-title">集团介绍</div>
+            <div class="jtjs-right-one">
+                <a>明码集团</a> &nbsp;&nbsp;&nbsp;是以企业社会责任为信条，独创技术为理念的新型企业，集团总部设在香港，并于深圳、厦门、上海、苏州、
+                昆山、天津、唐山等区域设立下属多家企业，产品主要聚焦于标识、科技电子、互联网、软件等相关产业，与美国、德国、英国、意大利
+                等多家巨头企业合作，共同开发或自主研发行业产品，多个产品先后获得发明专利、应用新型专利证书，且应用模式开创多个全球第一！
+            </div>
+            <div class="jtjs-right-two">
+                <a>明码理念</a><br>
+                提倡“以人为本”的理念，在细节中处处体现对人的尊重，人尽其才的用人观让员工与企业共同成长。<br>
+                提供优质的产品和服务，以顾客满意为中心，不断创新产品和服务，唯有创新才能够源源不断地提供企业发展的动力。
+            </div>
+            <div class="jtjs-right-three">
+                <a>集团企业</a><br>
+                <div class="jtjs-right-three-detail" style="margin-left: 0">
+                    <img src="/Public/Home/my/images/logo01.png">
+                    <a>明码实业</a>
+                </div>
+                <div class="jtjs-right-three-detail">
+                    <img src="/Public/Home/my/images/logo02.png">
+                    <a>拜特尔软件</a>
+                </div>
+                <div class="jtjs-right-three-detail">
+                    <img src="/Public/Home/my/images/logo03.png">
+                    <a>钦轩科技</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="xwzx">
+        <div class="xwzx-title">新闻中心</div>
+        <div class="xwzx-button">查看更多</div>
+
+
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="xwzx-detail" style="margin-left: 0">
+                        <img src="/Public/Home/my/images/lbt01.png">
+                        <div class="xwzx-detail-right">
+                            <div class="right-a">【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</div>
+                            <hr>
+                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
+                        </div>
+                    </div>
+                    <div class="xwzx-detail">
+                        <img src="/Public/Home/my/images/lbt02.png">
+                        <div class="xwzx-detail-right">
+                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
+                            <hr>
+                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
+                        </div>
+                    </div>
+                    <div class="xwzx-detail" style="margin-left: 0">
+                        <img src="/Public/Home/my/images/lbt03.png">
+                        <div class="xwzx-detail-right">
+                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
+                            <hr>
+                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
+                        </div>
+                    </div>
+                    <div class="xwzx-detail">
+                        <img src="/Public/Home/my/images/lbt03.png">
+                        <div class="xwzx-detail-right">
+                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
+                            <hr>
+                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
     <div class="span9">
         <!-- Contents
         ================================================== -->
@@ -114,8 +196,6 @@
         </section>
     </div>
 
-    </div>
-</div>
 
 <script type="text/javascript">
     $(function(){
@@ -140,7 +220,7 @@
 (function(){
 	var ThinkPHP = window.Think = {
 		"ROOT"   : "", //当前网站地址
-		"APP"    : "/index.php?s=", //当前项目地址
+		"APP"    : "/index.php", //当前项目地址
 		"PUBLIC" : "/Public", //项目公共目录地址
 		"DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
 		"MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],

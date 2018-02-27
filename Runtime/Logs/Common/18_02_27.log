@@ -1,0 +1,473 @@
+[ 2018-02-27T14:36:51+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002862s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003605s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:52+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004081s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:52+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003565s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004266s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:52+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004266s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:53+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004198s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004902s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:53+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002444s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003110s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:55+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002635s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003282s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:58+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002648s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003336s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:58+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003824s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:59+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002808s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003578s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T14:36:59+08:00 ] 127.0.0.1 /__Public__/Home/my/css/header.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002646s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003352s ]
+ERR: 无法加载模块:__Public__
+
+[ 2018-02-27T15:03:55+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002810s ]
+
+[ 2018-02-27T15:04:02+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002838s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003498s ]
+
+[ 2018-02-27T15:04:03+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003778s ]
+
+[ 2018-02-27T15:04:03+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002406s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003042s ]
+
+[ 2018-02-27T15:17:25+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002345s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002989s ]
+
+[ 2018-02-27T15:17:25+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003942s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004732s ]
+
+[ 2018-02-27T15:17:26+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002472s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003135s ]
+
+[ 2018-02-27T15:17:32+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002490s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003108s ]
+
+[ 2018-02-27T15:24:57+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002297s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002893s ]
+
+[ 2018-02-27T15:26:16+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002942s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003557s ]
+
+[ 2018-02-27T15:26:17+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002269s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002994s ]
+
+[ 2018-02-27T15:31:27+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003798s ]
+
+[ 2018-02-27T15:36:13+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002403s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003133s ]
+
+[ 2018-02-27T15:43:00+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002537s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003136s ]
+
+[ 2018-02-27T15:43:00+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002719s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003307s ]
+
+[ 2018-02-27T15:49:29+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002510s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003161s ]
+
+[ 2018-02-27T15:49:30+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002604s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003278s ]
+
+[ 2018-02-27T15:49:30+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002520s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003221s ]
+
+[ 2018-02-27T15:49:49+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004280s ]
+
+[ 2018-02-27T16:13:22+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002400s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002972s ]
+
+[ 2018-02-27T16:31:05+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002417s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003079s ]
+
+[ 2018-02-27T16:32:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002675s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003516s ]
+
+[ 2018-02-27T16:32:38+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003303s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004340s ]
+
+[ 2018-02-27T16:32:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002826s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003593s ]
+
+[ 2018-02-27T16:56:50+08:00 ] 127.0.0.1 /Public/Home/my/images/pic02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003715s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004924s ]
+
+[ 2018-02-27T16:56:51+08:00 ] 127.0.0.1 /Public/Home/my/images/pic02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002692s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003462s ]
+
+[ 2018-02-27T16:56:52+08:00 ] 127.0.0.1 /Public/Home/my/images/pic02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004829s ]
+
+[ 2018-02-27T16:56:52+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002822s ]
+
+[ 2018-02-27T17:07:34+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002604s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003973s ]
+
+[ 2018-02-27T17:07:34+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002825s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003437s ]
+
+[ 2018-02-27T17:15:28+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002928s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003559s ]
+
+[ 2018-02-27T17:17:11+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002819s ]
+
+[ 2018-02-27T17:17:12+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002847s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003527s ]
+
+[ 2018-02-27T17:17:12+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002433s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003026s ]
+
+[ 2018-02-27T17:29:05+08:00 ] 127.0.0.1 /Public/Home/my/images/logo02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004221s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005701s ]
+
+[ 2018-02-27T17:29:05+08:00 ] 127.0.0.1 /Public/Home/my/images/logo02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004856s ]
+
+[ 2018-02-27T17:35:39+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003362s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004170s ]
+
+[ 2018-02-27T17:35:40+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002443s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003093s ]
+
+[ 2018-02-27T17:54:05+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003754s ]
+
+[ 2018-02-27T17:54:05+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002391s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002974s ]
+
+[ 2018-02-27T17:54:07+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004696s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007329s ]
+
+[ 2018-02-27T18:09:09+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003389s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004345s ]
+
+[ 2018-02-27T18:30:17+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004214s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004897s ]
+
+[ 2018-02-27T18:34:31+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002824s ]
+
+[ 2018-02-27T18:34:32+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002884s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003567s ]
+
+[ 2018-02-27T18:42:59+08:00 ] 127.0.0.1 /Public/Home/my/images/lbt04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003316s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004342s ]
+
+[ 2018-02-27T18:42:59+08:00 ] 127.0.0.1 /Public/Home/my/images/lbt04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003879s ]
+
+[ 2018-02-27T18:42:59+08:00 ] 127.0.0.1 /Public/Home/my/images/lbt04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002644s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003313s ]
+
+[ 2018-02-27T18:42:59+08:00 ] 127.0.0.1 /Public/Home/my/images/lbt04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003482s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004319s ]
+
+[ 2018-02-27T18:46:09+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004717s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005717s ]
+
+[ 2018-02-27T22:48:48+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003533s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004289s ]
+
+[ 2018-02-27T22:54:08+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002888s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003540s ]
+
+[ 2018-02-27T22:54:16+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002713s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003458s ]
+
+[ 2018-02-27T22:55:22+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002282s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002946s ]
+
+[ 2018-02-27T22:55:23+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002503s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003223s ]
+
+[ 2018-02-27T22:55:28+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002392s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003061s ]
+
+[ 2018-02-27T22:55:29+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002486s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003078s ]
+
+[ 2018-02-27T22:56:11+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002666s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003434s ]
+
+[ 2018-02-27T22:56:11+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004846s ]
+
+[ 2018-02-27T22:56:59+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002911s ]
+
+[ 2018-02-27T22:57:08+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002763s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004270s ]
+
+[ 2018-02-27T22:57:09+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003652s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004345s ]
+
+[ 2018-02-27T22:57:09+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004943s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005569s ]
+
+[ 2018-02-27T22:58:26+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002292s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002894s ]
+
+[ 2018-02-27T22:58:36+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003393s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004072s ]
+
+[ 2018-02-27T22:58:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002872s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003698s ]
+
