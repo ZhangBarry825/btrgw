@@ -1,0 +1,134 @@
+[ 2018-02-27T11:59:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002613s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\WampServer\wamp\www\btrgw\wwwroot\ThinkPHP\Common\functions.php 第 1438 行.
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0083s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1519703963 AND ( deadline = 0 OR deadline > 1519703963 ) ORDER BY `id` DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `onethink_channel` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `onethink_channel` WHERE ( status=1 ) ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019666s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1519703963 AND ( deadline = 0 OR deadline > 1519703963 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `onethink_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.040125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2018-02-27T11:59:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004213s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\WampServer\wamp\www\btrgw\wwwroot\ThinkPHP\Common\functions.php 第 1438 行.
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0092s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0079s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0081s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1519703978 AND ( deadline = 0 OR deadline > 1519703978 ) ORDER BY `id` DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `onethink_channel` [ RunTime:0.0077s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `onethink_channel` WHERE ( status=1 ) ORDER BY `sort`  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001288s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1519703978 AND ( deadline = 0 OR deadline > 1519703978 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2018-02-27T11:59:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005191s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\WampServer\wamp\www\btrgw\wwwroot\ThinkPHP\Common\functions.php 第 1438 行.
+SQL: SHOW COLUMNS FROM `onethink_config` [ RunTime:0.0059s ]
+SQL: SELECT `type`,`name`,`value` FROM `onethink_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.0072s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.0059s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE `status` = 1 AND `pid` = 0 AND `create_time` < 1519703978 AND ( deadline = 0 OR deadline > 1519703978 ) ORDER BY `id` DESC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `onethink_channel` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `onethink_channel` WHERE ( status=1 ) ORDER BY `sort`  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000906s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `onethink_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `onethink_category` WHERE `status` = 1 ORDER BY `sort`  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` IN ('1','2') AND `create_time` < 1519703978 AND ( deadline = 0 OR deadline > 1519703978 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
