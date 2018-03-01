@@ -4,13 +4,14 @@
     <link rel="stylesheet" href="__PUBLIC__/Home/my/css/swiper.min.css">
     <script src="__PUBLIC__/Home/my/js/swiper.min.js"></script>
     <script src="__PUBLIC__/Home/my/js/index.js"></script>
+    <link rel="shortcut icon" href="__PUBLIC__/Home/my/images/tm.png" type="image/x-icon"/>
 </block>
 <block name="header">
     <div class="top-background" style="background-image: url('__PUBLIC__/Home/my/images/back01.jpg')">
         <div class="top-header">
             <div class="top-center">
                 <div class="top-center-left">
-                    <img src="__PUBLIC__/Home/my/images/logo02.png">
+                    <img src="__PUBLIC__/Home/my/images/tm.png">
                     <a>河南拜特尔软件科技有限公司</a>
                 </div>
                 <div class="top-center-right">
@@ -86,46 +87,44 @@
     <div class="xwzx">
         <div class="xwzx-title">新闻中心</div>
         <div class="xwzx-button">查看更多</div>
-
-
-
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="xwzx-detail" style="margin-left: 0">
-                        <img src="__PUBLIC__/Home/my/images/lbt01.png">
-                        <div class="xwzx-detail-right">
-                            <div class="right-a">【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</div>
-                            <hr>
-                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
-                        </div>
+                <volist name="xwzx_lists" id="list">
+                    <div class="swiper-slide">
+                        <a href="{:U('Article/detail?id='.$list[0]['id'])}"><div class="xwzx-detail" style="margin-left: 0">
+                            <img src="{:get_cover($list[0]['cover_id'],$field = path)}">
+                            <div class="xwzx-detail-right">
+                                <div class="right-a">{$list[0]['title']}</div>
+                                <hr>
+                                <span>{$list[0]['description']}</span>
+                            </div>
+                        </div></a>
+                        <a href="{:U('Article/detail?id='.$list[1]['id'])}"><div class="xwzx-detail">
+                            <img src="{:get_cover($list[1]['cover_id'],$field = path)}">
+                            <div class="xwzx-detail-right">
+                                <div class="right-a">{$list[1]['title']}</div>
+                                <hr>
+                                <span>{$list[1]['description']}</span>
+                            </div>
+                        </div></a>
+                        <a href="{:U('Article/detail?id='.$list[2]['id'])}"><div class="xwzx-detail" style="margin-left: 0">
+                            <img src="{:get_cover($list[2]['cover_id'],$field = path)}">
+                            <div class="xwzx-detail-right">
+                                <div class="right-a">{$list[2]['title']}</div>
+                                <hr>
+                                <span>{$list[2]['description']}</span>
+                            </div>
+                        </div></a>
+                        <a href="{:U('Article/detail?id='.$list[3]['id'])}"><div class="xwzx-detail">
+                            <img src="{:get_cover($list[3]['cover_id'],$field = path)}">
+                            <div class="xwzx-detail-right">
+                                <div class="right-a">{$list[3]['title']}</div>
+                                <hr>
+                                <span>{$list[3]['description']}</span>
+                            </div>
+                        </div></a>
                     </div>
-                    <div class="xwzx-detail">
-                        <img src="__PUBLIC__/Home/my/images/lbt02.png">
-                        <div class="xwzx-detail-right">
-                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
-                            <hr>
-                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
-                        </div>
-                    </div>
-                    <div class="xwzx-detail" style="margin-left: 0">
-                        <img src="__PUBLIC__/Home/my/images/lbt03.png">
-                        <div class="xwzx-detail-right">
-                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
-                            <hr>
-                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
-                        </div>
-                    </div>
-                    <div class="xwzx-detail">
-                        <img src="__PUBLIC__/Home/my/images/lbt03.png">
-                        <div class="xwzx-detail-right">
-                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
-                            <hr>
-                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
-                        </div>
-                    </div>
-                </div>
-
+                </volist>
             </div>
 
 
@@ -134,10 +133,56 @@
             <div class="swiper-button-next"></div>
 
         </div>
+    </div>
+    <div class="jrwm" style="background-image: url('__PUBLIC__/Home/my/images/back02.jpg')">
+        <div class="jrwm-center">
+            <div class="jrwm-center-zz"></div>
+            <div class="jrwm-center-title">期待你的加入</div>
+            <div class="jrwm-center-one">
+                我们是一群有理想、有干劲的年轻人，<br>我们不知道什么是成功，但我们知道什么是产品；我们不知道什么努力，
+                但我们知道什么是专注；我们不知道什么是勤劳，但我们知道什么是效率；我们不知道什么是完美，但我们知道什么是超越;
+                我们不知道什么是商业，但我们知道什么是诚信。
+            </div>
+            <div class="jrwm-button">加入我们</div>
+            <div class="jrwm-center-two">
+                <div class="jrwm-center-two-detail">
+                    <img src="__PUBLIC__/Home/my/images/t01.png"><br>
+                    <div class="jrwm-center-two-detail-a">经验丰富</div><br>
+                    <div  class="jrwm-center-two-detail-b">有着丰富的工作经验和能力</div>
+                </div>
+                <div class="jrwm-center-two-detail">
+                    <img src="__PUBLIC__/Home/my/images/t02.png"><br>
+                    <div class="jrwm-center-two-detail-a">弹性工作</div><br>
+                    <div  class="jrwm-center-two-detail-b">我们注重的是效率</div>
+                </div>
+                <div class="jrwm-center-two-detail">
+                    <img src="__PUBLIC__/Home/my/images/t03.png"><br>
+                    <div class="jrwm-center-two-detail-a">分为融洽</div><br>
+                    <div  class="jrwm-center-two-detail-b">我们注重的是效率</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lxwm">
+        <div class="lxwm-title">联系我们</div>
+        <div class="lxwm-center">
+            <div class="lxwm-center-left" style="background-image: url('__PUBLIC__/Home/my/images/map.png')">
 
-
-
-
+                <img class="lxwm-center-left-a" src="__PUBLIC__/Home/my/images/pointer01.png">
+                <img class="lxwm-center-left-b" src="__PUBLIC__/Home/my/images/pointer02.png">
+                <img class="lxwm-center-left-c" src="__PUBLIC__/Home/my/images/pointer02.png">
+                <img class="lxwm-center-left-d" src="__PUBLIC__/Home/my/images/pointer02.png">
+                <img class="lxwm-center-left-e" src="__PUBLIC__/Home/my/images/pointer02.png">
+                <img class="lxwm-center-left-f" src="__PUBLIC__/Home/my/images/pointer02.png">
+                <div class="lxwm-center-left-text">河南 郑州</div>
+            </div>
+            <div class="lxwm-center-right">
+                <div class="lxwm-center-right-a">河南拜特尔软件科技有限公司</div>
+                <div class="lxwm-center-right-b" style="margin-top: 50px"><a>地址：</a>郑州市中原中路146号2号楼203室</div>
+                <div class="lxwm-center-right-b"><a>联系邮箱：</a>izc@hnbtr.com</div>
+                <div class="lxwm-center-right-b"><a>联系电话：</a>0371-53337616</div>
+            </div>
+        </div>
     </div>
 
 
@@ -148,30 +193,28 @@
 
 
 
+    <!--<div class="span9">-->
+        <!--&lt;!&ndash; Contents-->
+        <!--================================================== &ndash;&gt;-->
+        <!--<section id="contents">-->
+            <!--<article:list name="article" category="1" child="true">-->
+                <!--<div class="">-->
+                    <!--<h3><a href="{:U('Article/detail?id='.$article['id'])}">{$article.title}</a></h3>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<p class="lead">{$article.description}</p>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<span><a href="{:U('Article/detail?id='.$article['id'])}">查看全文</a></span>-->
+                    <!--<span class="pull-right">-->
+                        <!--<span class="author">{$article.uid|get_username}</span>-->
+                        <!--<span>于 {$article.create_time|date='Y-m-d H:i',###}</span> 发表在 <span>-->
+                        <!--<a href="{:U('Article/lists?category='.get_category_name($article['category_id']))}">{$article.category_id|get_category_title}</a></span> ( 阅读：{$article.view} )-->
+                    <!--</span>-->
+                <!--</div>-->
+                <!--<hr/>-->
+            <!--</article:list>-->
 
-
-    <div class="span9">
-        <!-- Contents
-        ================================================== -->
-        <section id="contents">
-            <article:list name="article" category="1" child="true">
-                <div class="">
-                    <h3><a href="{:U('Article/detail?id='.$article['id'])}">{$article.title}</a></h3>
-                </div>
-                <div>
-                    <p class="lead">{$article.description}</p>
-                </div>
-                <div>
-                    <span><a href="{:U('Article/detail?id='.$article['id'])}">查看全文</a></span>
-                    <span class="pull-right">
-                        <span class="author">{$article.uid|get_username}</span>
-                        <span>于 {$article.create_time|date='Y-m-d H:i',###}</span> 发表在 <span>
-                        <a href="{:U('Article/lists?category='.get_category_name($article['category_id']))}">{$article.category_id|get_category_title}</a></span> ( 阅读：{$article.view} )
-                    </span>
-                </div>
-                <hr/>
-            </article:list>
-
-        </section>
-    </div>
+        <!--</section>-->
+    <!--</div>-->
 </block>

@@ -26,6 +26,15 @@ class IndexController extends HomeController {
         $this->assign('lists',$lists);//列表
         $this->assign('page',D('Document')->page);//分页
 
+        /*新闻中心轮播列表*/
+        $wxzx_category=D('Category')->getChildrenId(39);
+        $xwzx_count=D('Document')->listCount($wxzx_category);
+        $xwzx_page=floor(($xwzx_count/4));
+        for($i=1;$i<=$xwzx_page;$i++){
+            $xwzx_lists[$i]=D('Document')->page($i,4)->lists(40);
+        }
+        $this->assign('xwzx_lists',$xwzx_lists);
+
                  
         $this->display();
     }

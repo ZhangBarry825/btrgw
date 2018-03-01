@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
 <!--<link href="/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">-->
 <!--<link href="/Public/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
@@ -23,22 +23,24 @@
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
 
-	
+    
     <link href="/Public/Home/my/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="/Public/Home/my/css/swiper.min.css">
     <script src="/Public/Home/my/js/swiper.min.js"></script>
     <script src="/Public/Home/my/js/index.js"></script>
+    <link rel="shortcut icon" href="/Public/Home/my/images/tm.png" type="image/x-icon"/>
 
+    <link href="/Public/Home/my/css/footer.css" rel="stylesheet">
 </head>
 <body>
 
-	<!-- 主体 -->
-	
+<!-- 主体 -->
+
     <div class="top-background" style="background-image: url('/Public/Home/my/images/back01.jpg')">
         <div class="top-header">
             <div class="top-center">
                 <div class="top-center-left">
-                    <img src="/Public/Home/my/images/logo02.png">
+                    <img src="/Public/Home/my/images/tm.png">
                     <a>河南拜特尔软件科技有限公司</a>
                 </div>
                 <div class="top-center-right">
@@ -109,46 +111,42 @@
     <div class="xwzx">
         <div class="xwzx-title">新闻中心</div>
         <div class="xwzx-button">查看更多</div>
-
-
-
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="xwzx-detail" style="margin-left: 0">
-                        <img src="/Public/Home/my/images/lbt01.png">
-                        <div class="xwzx-detail-right">
-                            <div class="right-a">【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</div>
-                            <hr>
-                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
-                        </div>
-                    </div>
-                    <div class="xwzx-detail">
-                        <img src="/Public/Home/my/images/lbt02.png">
-                        <div class="xwzx-detail-right">
-                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
-                            <hr>
-                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
-                        </div>
-                    </div>
-                    <div class="xwzx-detail" style="margin-left: 0">
-                        <img src="/Public/Home/my/images/lbt03.png">
-                        <div class="xwzx-detail-right">
-                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
-                            <hr>
-                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
-                        </div>
-                    </div>
-                    <div class="xwzx-detail">
-                        <img src="/Public/Home/my/images/lbt03.png">
-                        <div class="xwzx-detail-right">
-                            <a>【明码】2017第8届亚洲国际标签印刷展|明码集团获行业内外一致认可</a>
-                            <hr>
-                            <span>2017年12月5日-8日，第八届亚洲国际标签印刷展览会于上海新国际博览展中心如期举办。</span>
-                        </div>
-                    </div>
-                </div>
-
+                <?php if(is_array($xwzx_lists)): $i = 0; $__LIST__ = $xwzx_lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><div class="swiper-slide">
+                        <a href="<?php echo U('Article/detail?id='.$list[0]['id']);?>"><div class="xwzx-detail" style="margin-left: 0">
+                            <img src="<?php echo get_cover($list[0]['cover_id'],$field = path);?>">
+                            <div class="xwzx-detail-right">
+                                <div class="right-a"><?php echo ($list[0]['title']); ?></div>
+                                <hr>
+                                <span><?php echo ($list[0]['description']); ?></span>
+                            </div>
+                        </div></a>
+                        <a href="<?php echo U('Article/detail?id='.$list[1]['id']);?>"><div class="xwzx-detail">
+                            <img src="<?php echo get_cover($list[1]['cover_id'],$field = path);?>">
+                            <div class="xwzx-detail-right">
+                                <div class="right-a"><?php echo ($list[1]['title']); ?></div>
+                                <hr>
+                                <span><?php echo ($list[1]['description']); ?></span>
+                            </div>
+                        </div></a>
+                        <a href="<?php echo U('Article/detail?id='.$list[2]['id']);?>"><div class="xwzx-detail" style="margin-left: 0">
+                            <img src="<?php echo get_cover($list[2]['cover_id'],$field = path);?>">
+                            <div class="xwzx-detail-right">
+                                <div class="right-a"><?php echo ($list[2]['title']); ?></div>
+                                <hr>
+                                <span><?php echo ($list[2]['description']); ?></span>
+                            </div>
+                        </div></a>
+                        <a href="<?php echo U('Article/detail?id='.$list[3]['id']);?>"><div class="xwzx-detail">
+                            <img src="<?php echo get_cover($list[3]['cover_id'],$field = path);?>">
+                            <div class="xwzx-detail-right">
+                                <div class="right-a"><?php echo ($list[3]['title']); ?></div>
+                                <hr>
+                                <span><?php echo ($list[3]['description']); ?></span>
+                            </div>
+                        </div></a>
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
 
 
@@ -157,10 +155,56 @@
             <div class="swiper-button-next"></div>
 
         </div>
+    </div>
+    <div class="jrwm" style="background-image: url('/Public/Home/my/images/back02.jpg')">
+        <div class="jrwm-center">
+            <div class="jrwm-center-zz"></div>
+            <div class="jrwm-center-title">期待你的加入</div>
+            <div class="jrwm-center-one">
+                我们是一群有理想、有干劲的年轻人，<br>我们不知道什么是成功，但我们知道什么是产品；我们不知道什么努力，
+                但我们知道什么是专注；我们不知道什么是勤劳，但我们知道什么是效率；我们不知道什么是完美，但我们知道什么是超越;
+                我们不知道什么是商业，但我们知道什么是诚信。
+            </div>
+            <div class="jrwm-button">加入我们</div>
+            <div class="jrwm-center-two">
+                <div class="jrwm-center-two-detail">
+                    <img src="/Public/Home/my/images/t01.png"><br>
+                    <div class="jrwm-center-two-detail-a">经验丰富</div><br>
+                    <div  class="jrwm-center-two-detail-b">有着丰富的工作经验和能力</div>
+                </div>
+                <div class="jrwm-center-two-detail">
+                    <img src="/Public/Home/my/images/t02.png"><br>
+                    <div class="jrwm-center-two-detail-a">弹性工作</div><br>
+                    <div  class="jrwm-center-two-detail-b">我们注重的是效率</div>
+                </div>
+                <div class="jrwm-center-two-detail">
+                    <img src="/Public/Home/my/images/t03.png"><br>
+                    <div class="jrwm-center-two-detail-a">分为融洽</div><br>
+                    <div  class="jrwm-center-two-detail-b">我们注重的是效率</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lxwm">
+        <div class="lxwm-title">联系我们</div>
+        <div class="lxwm-center">
+            <div class="lxwm-center-left" style="background-image: url('/Public/Home/my/images/map.png')">
 
-
-
-
+                <img class="lxwm-center-left-a" src="/Public/Home/my/images/pointer01.png">
+                <img class="lxwm-center-left-b" src="/Public/Home/my/images/pointer02.png">
+                <img class="lxwm-center-left-c" src="/Public/Home/my/images/pointer02.png">
+                <img class="lxwm-center-left-d" src="/Public/Home/my/images/pointer02.png">
+                <img class="lxwm-center-left-e" src="/Public/Home/my/images/pointer02.png">
+                <img class="lxwm-center-left-f" src="/Public/Home/my/images/pointer02.png">
+                <div class="lxwm-center-left-text">河南 郑州</div>
+            </div>
+            <div class="lxwm-center-right">
+                <div class="lxwm-center-right-a">河南拜特尔软件科技有限公司</div>
+                <div class="lxwm-center-right-b" style="margin-top: 50px"><a>地址：</a>郑州市中原中路146号2号楼203室</div>
+                <div class="lxwm-center-right-b"><a>联系邮箱：</a>izc@hnbtr.com</div>
+                <div class="lxwm-center-right-b"><a>联系电话：</a>0371-53337616</div>
+            </div>
+        </div>
     </div>
 
 
@@ -171,30 +215,30 @@
 
 
 
+    <!--<div class="span9">-->
+        <!--&lt;!&ndash; Contents-->
+        <!--================================================== &ndash;&gt;-->
+        <!--<section id="contents">-->
+            <!--<?php $__CATE__ = D('Category')->getChildrenId(1);$__LIST__ = D('Document')->page(!empty($_GET["p"])?$_GET["p"]:1,10)->lists($__CATE__, '`level` DESC,`id` DESC', 1,true); if(is_array($__LIST__)): $i = 0; $__LIST__ = $__LIST__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?>-->
+                <!--<div class="">-->
+                    <!--<h3><a href="<?php echo U('Article/detail?id='.$article['id']);?>"><?php echo ($article["title"]); ?></a></h3>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<p class="lead"><?php echo ($article["description"]); ?></p>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<span><a href="<?php echo U('Article/detail?id='.$article['id']);?>">查看全文</a></span>-->
+                    <!--<span class="pull-right">-->
+                        <!--<span class="author"><?php echo (get_username($article["uid"])); ?></span>-->
+                        <!--<span>于 <?php echo (date('Y-m-d H:i',$article["create_time"])); ?></span> 发表在 <span>-->
+                        <!--<a href="<?php echo U('Article/lists?category='.get_category_name($article['category_id']));?>"><?php echo (get_category_title($article["category_id"])); ?></a></span> ( 阅读：<?php echo ($article["view"]); ?> )-->
+                    <!--</span>-->
+                <!--</div>-->
+                <!--<hr/>-->
+            <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
 
-
-    <div class="span9">
-        <!-- Contents
-        ================================================== -->
-        <section id="contents">
-            <?php $__CATE__ = D('Category')->getChildrenId(1);$__LIST__ = D('Document')->page(!empty($_GET["p"])?$_GET["p"]:1,10)->lists($__CATE__, '`level` DESC,`id` DESC', 1,true); if(is_array($__LIST__)): $i = 0; $__LIST__ = $__LIST__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?><div class="">
-                    <h3><a href="<?php echo U('Article/detail?id='.$article['id']);?>"><?php echo ($article["title"]); ?></a></h3>
-                </div>
-                <div>
-                    <p class="lead"><?php echo ($article["description"]); ?></p>
-                </div>
-                <div>
-                    <span><a href="<?php echo U('Article/detail?id='.$article['id']);?>">查看全文</a></span>
-                    <span class="pull-right">
-                        <span class="author"><?php echo (get_username($article["uid"])); ?></span>
-                        <span>于 <?php echo (date('Y-m-d H:i',$article["create_time"])); ?></span> 发表在 <span>
-                        <a href="<?php echo U('Article/lists?category='.get_category_name($article['category_id']));?>"><?php echo (get_category_title($article["category_id"])); ?></a></span> ( 阅读：<?php echo ($article["view"]); ?> )
-                    </span>
-                </div>
-                <hr/><?php endforeach; endif; else: echo "" ;endif; ?>
-
-        </section>
-    </div>
+        <!--</section>-->
+    <!--</div>-->
 
 
 <script type="text/javascript">
@@ -204,16 +248,18 @@
         }).resize();
     })
 </script>
-	<!-- /主体 -->
+<!-- /主体 -->
 
-	<!-- 底部 -->
-	
-    <!-- 底部
-    ================================================== -->
+<!-- 底部 -->
+
     <footer class="footer">
-      <div class="container">
-          <p> 本站由 <strong><a href="http://www.onethink.cn" target="_blank">OneThink</a></strong> 强力驱动</p>
-      </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-center">
+                <img src="/Public/Home/my/images/tm.png">
+                <div class="footer-bottom-center-one">河南拜特尔软件科技有限公司</div>
+                <div class="footer-bottom-center-two">Copyright &copy; 2015 Better Software. All Rights Reserved.</div>
+            </div>
+        </div>
     </footer>
 
 <script type="text/javascript">
@@ -235,6 +281,6 @@
 	
 </div>
 
-	<!-- /底部 -->
+<!-- /底部 -->
 </body>
 </html>

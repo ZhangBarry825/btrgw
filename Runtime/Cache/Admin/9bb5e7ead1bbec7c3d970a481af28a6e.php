@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><?php echo ($meta_title); ?>|OneThink管理平台</title>
-    <link href="/Public/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <title><?php echo ($meta_title); ?>|拜特尔管理平台</title>
+    <link rel="shortcut icon" href="/Public/Admin/images/tm.png" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/Public/Admin/my/css/base.css">
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" media="all">
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/module.css">
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/style.css" media="all">
@@ -21,7 +22,11 @@
     <!-- 头部 -->
     <div class="header">
         <!-- Logo -->
-        <span class="logo"></span>
+        <div class="top-logo">
+            <img src="/Public/Home/my/images/tm.png">
+            <span>河南拜特尔</span>
+        </div>
+
         <!-- /Logo -->
 
         <!-- 主导航 -->
@@ -144,7 +149,7 @@
         </div>
         <div class="cont-ft">
             <div class="copyright">
-                <div class="fl">感谢使用<a href="http://www.onethink.cn" target="_blank">OneThink</a>管理平台</div>
+                <div class="fl">感谢使用<a href="/" target="_blank">拜特尔</a>管理平台</div>
                 <div class="fr">V<?php echo (ONETHINK_VERSION); ?></div>
             </div>
         </div>
@@ -154,7 +159,7 @@
     (function(){
         var ThinkPHP = window.Think = {
             "ROOT"   : "", //当前网站地址
-            "APP"    : "/admin.php?s=", //当前项目地址
+            "APP"    : "/index.php", //当前项目地址
             "PUBLIC" : "/Public", //项目公共目录地址
             "DEEP"   : "<?php echo C('URL_PATHINFO_DEPR');?>", //PATHINFO分割符
             "MODEL"  : ["<?php echo C('URL_MODEL');?>", "<?php echo C('URL_CASE_INSENSITIVE');?>", "<?php echo C('URL_HTML_SUFFIX');?>"],

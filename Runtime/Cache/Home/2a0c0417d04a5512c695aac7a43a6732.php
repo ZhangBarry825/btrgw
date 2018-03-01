@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 <title><?php echo C('WEB_SITE_TITLE');?></title>
-<link href="/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="/Public/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="/Public/static/bootstrap/css/docs.css" rel="stylesheet">
-<link href="/Public/static/bootstrap/css/onethink.css" rel="stylesheet">
+<!--<link href="/Public/static/bootstrap/css/bootstrap.css" rel="stylesheet">-->
+<!--<link href="/Public/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">-->
+<!--<link href="/Public/static/bootstrap/css/docs.css" rel="stylesheet">-->
+<!--<link href="/Public/static/bootstrap/css/onethink.css" rel="stylesheet">-->
 
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -23,11 +23,20 @@
 <!-- 页面header钩子，一般用于加载插件CSS文件和代码 -->
 <?php echo hook('pageHeader');?>
 
+	
+	<link rel="shortcut icon" href="/Public/Home/my/images/tm.png" type="image/x-icon"/>
+
+	<link href="/Public/Home/my/css/footer.css" rel="stylesheet">
 </head>
 <body>
 	<!-- 头部 -->
 	<!-- 导航条
 ================================================== -->
+
+
+	<link rel="shortcut icon" href="/Public/Home/my/images/tm.png" type="image/x-icon"/>
+
+
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
@@ -40,21 +49,23 @@
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <?php $__NAV__ = M('Channel')->field(true)->where("status=1")->order("sort")->select(); if(is_array($__NAV__)): $i = 0; $__LIST__ = $__NAV__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i; if(($nav["pid"]) == "0"): ?><li>
-                            <a href="<?php echo (get_nav_url($nav["url"])); ?>" target="<?php if(($nav["target"]) == "1"): ?>_blank<?php else: ?>_self<?php endif; ?>"><?php echo ($nav["title"]); ?></a>
-                        </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                                <a href="<?php echo (get_nav_url($nav["url"])); ?>"
+                                   target="<?php if(($nav["target"]) == "1"): ?>_blank<?php else: ?>_self<?php endif; ?>"><?php echo ($nav["title"]); ?></a>
+                            </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                 </ul>
             </div>
             <div class="nav-collapse collapse pull-right">
                 <?php if(is_login()): ?><ul class="nav" style="margin-right:0">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                               style="padding-left:0;padding-right:0"><?php echo get_username();?> <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo U('User/profile');?>">修改密码</a></li>
                                 <li><a href="<?php echo U('User/logout');?>">退出</a></li>
                             </ul>
                         </li>
                     </ul>
-                <?php else: ?>
+                    <?php else: ?>
                     <ul class="nav" style="margin-right:0">
                         <li>
                             <a href="<?php echo U('User/login');?>">登录</a>
@@ -88,19 +99,7 @@
 		</div>
 	</header>
 
-<div id="main-container" class="container">
-    <div class="row">
-        
-        <!-- 左侧 nav
-        ================================================== -->
-            <div class="span3 bs-docs-sidebar">
-                
-                <ul class="nav nav-list bs-docs-sidenav">
-                    <?php echo W('Category/lists', array($category['id'], ACTION_NAME == 'index'));?>
-                </ul>
-            </div>
-        
-        
+
     <div class="span9 main-content">
         <!-- Contents
         ================================================== -->
@@ -109,8 +108,6 @@
         <?php echo hook('documentDetailAfter',$info);?>
     </div>
 
-    </div>
-</div>
 
 <script type="text/javascript">
     $(function(){
@@ -123,12 +120,14 @@
 
 	<!-- 底部 -->
 	
-    <!-- 底部
-    ================================================== -->
     <footer class="footer">
-      <div class="container">
-          <p> 本站由 <strong><a href="http://www.onethink.cn" target="_blank">OneThink</a></strong> 强力驱动</p>
-      </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-center">
+                <img src="/Public/Home/my/images/tm.png">
+                <div class="footer-bottom-center-one">河南拜特尔软件科技有限公司</div>
+                <div class="footer-bottom-center-two">Copyright &copy; 2015 Better Software. All Rights Reserved.</div>
+            </div>
+        </div>
     </footer>
 
 <script type="text/javascript">

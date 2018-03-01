@@ -1,14 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 微软雅黑;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     width: 100%;
 }
-.top-background{
+
+.top-background {
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,125 +18,149 @@ body{
     width: 100%;
     height: 1080px;
 }
-.top-header{
-    background: rgba(255,255,255,0.5);
+
+.top-header {
+    background: rgba(255, 255, 255, 0.5);
     float: left;
     width: 100%;
     height: 80px;
     /*background-color: white;*/
 }
-.top-center{
+
+.top-center {
     width: 1200px;
     height: 100%;
     /*background-color:gold ;*/
     margin: 0 auto;
 }
-.top-center-left{
+
+.top-center-left {
     float: left;
     width: 420px;
 }
-.top-center-left img{
+
+.top-center-left img {
+    margin-top: 13px;
     float: left;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
-.top-center-left a{
+
+.top-center-left a {
+    margin-left: 10px;
     width: 330px;
     font-weight: 500;
     font-size: 25px;
     margin-top: 20px;
     float: left;
 }
-.top-center-right{
+
+.top-center-right {
     float: left;
-    width:730px;
+    width: 730px;
     margin-left: 50px;
     height: 100%;
     text-align: center;
 }
-.top-center-right ul{
+
+.top-center-right ul {
     list-style: none;
 }
-.top-center-right li{
+
+.top-center-right li {
     margin-left: 55px;
     margin-top: 25px;
     float: left;
 }
-.top-center-right a{
+
+.top-center-right a {
     font-size: 18px;
     text-decoration: none;
     color: black;
 }
-.gywm{
+
+.gywm {
     width: 100%;
     height: 1080px;
     background-color: white;
     padding-top: 150px;
     box-sizing: border-box;
 }
-.gywm-title{
+
+.gywm-title {
     text-align: center;
     font-size: 30px;
     width: 500px;
     margin: 0 auto;
 
 }
-.gywm-middle{
+
+.gywm-middle {
     width: 1200px;
     height: 540px;
     margin: 0 auto;
     margin-top: 120px;
 }
-.gywm-middle-left{
+
+.gywm-middle-left {
     margin-left: 60px;
     float: left;
     width: 480px;
     height: 540px;
 }
-.gywm-middle-left img{
+
+.gywm-middle-left img {
     width: 480px;
     height: 540px;
 }
-.gywm-middle-right{
+
+.gywm-middle-right {
     float: left;
     width: 650px;
     height: 540px;
     /*background-color: sandybrown;*/
 }
-.gywm-middle-top{
-    text-align:justify;
+
+.gywm-middle-top {
+    text-align: justify;
     line-height: 30px;
     word-spacing: 10px;
     padding: 60px;
     box-sizing: border-box;
 }
-.gywm-middle-top span{
+
+.gywm-middle-top span {
     color: #0055b9;
     font-size: 25px;
 }
-.gywm-middle-bottom{
+
+.gywm-middle-bottom {
     padding: 60px;
     box-sizing: border-box;
 }
-.gywm-middle-bottom span{
+
+.gywm-middle-bottom span {
     font-weight: 300;
     margin-left: 20px;
     font-size: 33px;
-    letter-spacing:5px;
+    letter-spacing: 5px;
 }
-.gywm-middle-bottom a{
+
+.gywm-middle-bottom a {
     font-weight: 300;
     margin-left: 20px;
     font-size: 23px;
     float: right;
     margin-right: 30px;
 }
-.jtjs{
+
+.jtjs {
     width: 100%;
     height: 1080px;
     background-color: #014593;
 }
-.jtjs-left{
+
+.jtjs-left {
     float: left;
     width: 50%;
     height: 1080px;
@@ -142,7 +168,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.jtjs-right{
+
+.jtjs-right {
     padding: 60px;
     box-sizing: border-box;
     text-align: justify;
@@ -150,13 +177,15 @@ body{
     float: left;
     width: 50%;
     height: 1080px;
-    background-color:  #014593;
+    background-color: #014593;
 }
-.jtjs-right-title{
+
+.jtjs-right-title {
     margin-top: 150px;
     font-size: 30px;
 }
-.jtjs-right-one{
+
+.jtjs-right-one {
     clear: left;
     font-weight: 100;
     margin-top: 50px;
@@ -165,11 +194,13 @@ body{
     float: left;
     font-size: 16px;
 }
-.jtjs-right-one a,.jtjs-right-two a,.jtjs-right-three a{
+
+.jtjs-right-one a, .jtjs-right-two a, .jtjs-right-three a {
     font-size: 22px;
     font-weight: 400;
 }
-.jtjs-right-two{
+
+.jtjs-right-two {
     clear: left;
     font-weight: 100;
     margin-top: 50px;
@@ -178,7 +209,8 @@ body{
     float: left;
     font-size: 16px;
 }
-.jtjs-right-three{
+
+.jtjs-right-three {
     clear: left;
     font-weight: 100;
     margin-top: 50px;
@@ -187,7 +219,8 @@ body{
     float: left;
     font-size: 16px;
 }
-.jtjs-right-three-detail{
+
+.jtjs-right-three-detail {
     margin-top: 20px;
     margin-left: 70px;
     text-align: center;
@@ -195,13 +228,16 @@ body{
     width: 95px;
     height: 160px;
 }
-.jtjs-right-three-detail img{
+
+.jtjs-right-three-detail img {
     border-radius: 50%;
 }
-.jtjs-right-three-detail a{
+
+.jtjs-right-three-detail a {
     font-size: 15px;
 }
-.xwzx{
+
+.xwzx {
     padding-top: 190px;
     box-sizing: border-box;
     text-align: center;
@@ -209,48 +245,60 @@ body{
     height: 1080px;
     background-color: white;
 }
-.xwzx-title{
+
+.xwzx-title {
     font-size: 30px;
 }
-.xwzx-button{
+
+.xwzx-button {
     cursor: pointer;
     margin: 0 auto;
     width: 80px;
-    border-radius: 5px;
     padding: 5px;
+    text-align: center;
     margin-top: 50px;
-    border:1px solid gainsboro;
+    border: 1px solid gainsboro;
     color: #616161;
 }
+
 .swiper-container {
     position: relative;
-    top:40px;
+    top: 40px;
     width: 1130px;
     height: 550px;
 }
-.swiper-slide{
+
+.swiper-slide {
     padding: 50px;
     box-sizing: border-box;
 }
-.xwzx-detail{
+.swiper-slide a{
+    color: black;
+    text-decoration: none;
+}
+.xwzx-detail {
     cursor: pointer;
     float: left;
     margin-left: 40px;
     margin-top: 40px;
     width: 480px;
     height: 170px;
-    border:1px solid gainsboro;
+    border: 1px solid gainsboro;
+    overflow: hidden;
 }
-.xwzx-detail:hover>.xwzx-detail-right{
+
+.xwzx-detail:hover > .xwzx-detail-right {
     background-color: #bc160a;
     color: white;
 }
-.xwzx-detail img{
+
+.xwzx-detail img {
     float: left;
     width: 210px;
     height: 170px;
 }
-.xwzx-detail-right{
+
+.xwzx-detail-right {
     text-align: left;
     float: left;
     width: 270px;
@@ -259,28 +307,199 @@ body{
     box-sizing: border-box;
     font-size: 17px;
 }
-.xwzx-detail-right.a{
+
+.xwzx-detail-right.a {
     height: 65px;
     overflow: hidden;
 }
-.right-a{
-    height: 66px;
+
+.right-a {
+    max-height: 66px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    margin-bottom: 5px;
 }
+
 .xwzx-detail-right span {
+    margin-top: 5px;
     font-size: 15px;
     font-weight: 200;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
--webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
 }
 
+.jrwm {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1080px;
+
+}
+
+.jrwm-center {
+    width: 1200px;
+    height: 1080px;
+    margin: 0 auto;
+}
+
+.jrwm-center-zz {
+    width: 100%;
+    height: 1px;
+}
+
+.jrwm-center-title {
+    margin: 0 auto;
+    font-size: 30px;
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.jrwm-center-one {
+    color: white;
+    width: 840px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 33px;
+}
+
+.jrwm-button {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 80px;
+    padding: 5px;
+    margin-top: 60px;
+    border: 1px solid gainsboro;
+    color: white;
+    text-align: center;
+}
+
+.jrwm-center-two-detail {
+    width: 200px;
+    text-align: center;
+    margin-top: 150px;
+    float: left;
+    margin-left: 150px;
+}
+
+.jrwm-center-two-detail img{
+    margin: 0 auto;
+}
+.jrwm-center-two-detail-a{
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.jrwm-center-two-detail-b{
+    color: white;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 200;
+}
+.lxwm{
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1080px;
+}
+.lxwm-title{
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 140px;
+}
+.lxwm-center{
+    padding-left: 70px;
+    padding-right: 70px;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.lxwm-center-left{
+    width: 620px;
+    height: 500px;
+    background-size: cover;
+    float: left;
+}
+.lxwm-center-right{
+    padding: 20px;
+    box-sizing: border-box;
+    width: 320px;
+    height: 270px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 130px;
+    box-shadow: 0 1px 20px gainsboro, 0 0 1px gainsboro, 0 0 1px gainsboro;
+}
+.lxwm-center-right-a{
+    font-size: 21px;
+    color: #bc160a;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.lxwm-center-right-b{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.lxwm-center-right-b a{
+    color: grey;
+}
+.lxwm-center-left-a{
+    position: relative;
+    left: 410px;
+    top: 240px;
+}
+.lxwm-center-left-b{
+    position: relative;
+    left: 480px;
+    top: 290px;
+}
+.lxwm-center-left-c{
+    position: relative;
+    left: 320px;
+    top: 420px;
+}
+.lxwm-center-left-d{
+    position: relative;
+    left: 315px;
+    top: 410px;
+}
+.lxwm-center-left-e{
+    position: relative;
+    left: 310px;
+    top: 320px;
+}
+.lxwm-center-left-f{
+    position: relative;
+    left: 240px;
+    top: 340px;
+}
+.lxwm-center-left-text{
+    position: relative;
+    left: 385px;
+    top: 165px;
+    font-size: 18px;
+    color: #014292;
+    font-weight: bold;
+}
 
 
 

@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>欢迎您登录OneThink</title>
+        <title>欢迎登录拜特尔管理平台</title>
         <link rel="stylesheet" type="text/css" href="/Public/Admin/css/login.css" media="all">
        	<link rel="stylesheet" type="text/css" href="/Public/Admin/css/<?php echo (C("COLOR_STYLE")); ?>.css" media="all">
+        <link rel="shortcut icon" href="/Public/Admin/images/tm.png" type="image/x-icon"/>
     </head>
     <body id="login-page">
         <div id="main-content">
@@ -13,7 +14,7 @@
             <div class="login-body">
                 <div class="login-main pr">
                     <form action="<?php echo U('login');?>" method="post" class="login-form">
-                        <h3 class="welcome"><i class="login-logo"></i>OneThink管理平台</h3>
+                        <h3 class="welcome"><i class="login-logo"></i>拜特尔管理平台</h3>
                         <div id="itemBox" class="item-box">
                             <div class="item">
                                 <i class="icon-login-user"></i>
